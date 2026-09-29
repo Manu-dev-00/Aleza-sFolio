@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>EweLang - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house navicon"></i><span>Accueil</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> <span>A propos</span></a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> <span>Résumé</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> <span>Services</span></a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/Amos Mazamasso ALEZA"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Manu-dev-00"><i class="bi bi-github"></i></a>
+        <a href="mailto:alezaemmanuel05@hotmail.com"><i class="bi bi-envelope"></i></a>
+        <a href="https://wa.me/22896080021"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Détails du Portfolio </h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li class="current">Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+               {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ew2.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ew4.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/EW3.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Information du projet</h3>
+              <ul>
+                <li><strong>Catégorie</strong>: <span>Dévelopement Mobile</span></li>
+                <li><strong>Nom de l'application</strong>: EweLang</li>
+                <li><strong>Type de projet</strong>: <span>personnel</span></li>
+                <!-- <li><strong>URL du projet</strong>: <a href="#" target="_blank">www.github.com</a></li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Description</h2>
+              <p>
+                EweLang est une application mobile qui permet d'apprendre la langue Ewé à partir du français de manière interactive et ludique. L'application propose une variété de leçons, d'exercices et de ressources pour aider les utilisateurs à maîtriser les bases de la langue Ewé, ainsi que des fonctionnalités avancées pour les apprenants plus expérimentés.
+              </p>
+              <p>
+
+                <h2>🎯 Objectifs</h2>
+                <ul>
+              <li>Apprentissage de la langue Ewé à partir du français de manière interactive et ludique.</li>
+              <li>Proposer une variété de leçons et d'exercices.</li>
+              <li>Offrir une visualisation claire de la progression de l'apprentissage.</li>
+                </ul>
+              </p>
+              </p>
+
+                <h2>🛠️ Technologies utilisées</h2>
+                <ul>
+             <li>Backend : Python, FastApi.</li>
+             <li>Base de données : SQLite pour stocker les transactions localement sur téléphone.</li>
+             <li>Frontend : Flutter, Dart.</li>
+             <li>Flutter Sound.</li>
+             <li>NLP(Natural Language Processing).</li>
+                </ul>
+              </p>
+
+
+    <main>
+      <h1>Application Mobile</h1>
+      <p>Cette page présente les détails de l'application mobile EweLang.</p>
+    </main>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">aleza Amos</strong> <span>Tous droits reservés</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Août 2024 <a href="https://bootstrapmade.com/"></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Bouton thème -->
+  <div class="theme-toggle" id="themeToggle" title="Changer le thème">
+    <i class="bi bi-moon-fill" id="themeIcon"></i>
+  </div>
+  <script src="assets/js/theme.js"></script>
+
+</body>
+
+</html>
