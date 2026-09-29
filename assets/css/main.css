@@ -1943,12 +1943,6 @@ section,
   .services .service-card h3 {
     font-size: 24px;
   }
-
-  .services .service-card .service-icon {
-    position: absolute;
-    top: 40px;
-    left: 25px;
-  }
 }
 
 @media (max-width: 768px) {
