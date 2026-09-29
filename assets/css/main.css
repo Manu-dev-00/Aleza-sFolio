@@ -476,6 +476,13 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  /* Reduce the fade-left/fade-right travel distance so content doesn't
+     start off-screen on narrow viewports, while keeping the animation. */
+  html:not(.no-js) [data-aos=fade-right],
+  html:not(.no-js) [data-aos=fade-left] {
+    transform: translate3d(0, 20px, 0);
+  }
 }
 
 /*--------------------------------------------------------------
