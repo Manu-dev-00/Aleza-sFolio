@@ -84,7 +84,8 @@
       duration: 600,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      disable: 'mobile'
     });
   }
   window.addEventListener('load', aosInit);
