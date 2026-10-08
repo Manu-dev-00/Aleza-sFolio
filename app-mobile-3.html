@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>EweLang - Portfolio</title>
+  <title>ANAMET Mobile - Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -98,15 +98,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew2.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-mobile-apercu.png" alt="ANAMET Mobile - aperçu des écrans" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew4.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-mobile-accueil.png" alt="ANAMET Mobile - écran Aujourd'hui" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/EW3.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-mobile-carte.png" alt="ANAMET Mobile - alertes et carte" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/anamet-mobile-parametres.png" alt="ANAMET Mobile - paramètres" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -118,9 +122,9 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Information du projet</h3>
               <ul>
-                <li><strong>Catégorie</strong>: <span>Dévelopement Mobile</span></li>
-                <li><strong>Nom de l'application</strong>: EweLang</li>
-                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez Kingsoft Solutions)</span></li>
+                <li><strong>Catégorie</strong>: <span>Développement Mobile</span></li>
+                <li><strong>Nom de l'application</strong>: ANAMET Mobile</li>
+                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez METEO TOGO)</span></li>
                 <!-- <li><strong>URL du projet</strong>: <a href="#" target="_blank">www.github.com</a></li> -->
               </ul>
             </div>
@@ -130,33 +134,36 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Description</h2>
               <p>
-                EweLang est une application mobile qui permet d'apprendre la langue Ewé à partir du français de manière interactive et ludique. L'application propose une variété de leçons, d'exercices et de ressources pour aider les utilisateurs à maîtriser les bases de la langue Ewé, ainsi que des fonctionnalités avancées pour les apprenants plus expérimentés.
+                ANAMET Mobile est l’application mobile de l’Agence Nationale de la Météorologie du Togo (METEO TOGO). Elle diffuse au grand public les prévisions et les alertes météorologiques, en français, en éwé et en kabiyè, sous forme de texte et d’audio. Elle fonctionne en lecture seule : les données sont saisies et validées dans le back office ANAMET, et l’application les récupère par API.
               </p>
               <p>
 
                 <h2>🎯 Objectifs</h2>
                 <ul>
-              <li>Apprentissage de la langue Ewé à partir du français de manière interactive et ludique.</li>
-              <li>Proposer une variété de leçons et d'exercices.</li>
-              <li>Offrir une visualisation claire de la progression de l'apprentissage.</li>
+              <li>Informer chaque utilisateur des prévisions de sa ville, avec recherche de ville et géolocalisation.</li>
+              <li>Diffuser les alertes dans la langue de l’utilisateur (français, éwé, kabiyè), en texte et en audio.</li>
+              <li>Envoyer des notifications push dès qu’une nouvelle alerte est publiée.</li>
+              <li>Rester utilisable avec une connexion faible grâce au cache hors-ligne.</li>
                 </ul>
               </p>
               </p>
 
                 <h2>🛠️ Technologies utilisées</h2>
                 <ul>
-             <li>Backend : Python, FastApi.</li>
-             <li>Base de données : SQLite pour stocker les transactions localement sur téléphone.</li>
              <li>Frontend : Flutter, Dart.</li>
-             <li>Flutter Sound.</li>
-             <li>NLP(Natural Language Processing).</li>
+             <li>API : Django REST Framework (back office ANAMET) et Open-Meteo pour les prévisions.</li>
+             <li>Carte interactive : flutter_map avec OpenStreetMap, et géolocalisation GPS.</li>
+             <li>Notifications : Firebase Cloud Messaging.</li>
+             <li>Audio : lecture du corpus vocal des alertes en langue locale.</li>
+             <li>Stockage local : préférences de langue, de ville et cache hors-ligne.</li>
+
                 </ul>
               </p>
 
 
     <main>
       <h1>Application Mobile</h1>
-      <p>Cette page présente les détails de l'application mobile EweLang.</p>
+      <p>Cette page présente les détails de l'application mobile ANAMET.</p>
     </main>
 
   </main>

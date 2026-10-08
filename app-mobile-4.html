@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>EweLang - Portfolio</title>
+  <title>MeteoMobile - Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -98,15 +98,23 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew2.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/meteomobile-apercu.png" alt="MeteoMobile - aperçu des écrans" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew4.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/meteomobile-dashboard.png" alt="MeteoMobile - dashboard et alertes" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/EW3.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/meteomobile-favoris-comparer.png" alt="MeteoMobile - favoris et comparaison de villes" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/meteomobile-journal-consensus.png" alt="MeteoMobile - journal météo et consensus multi-modèles" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/meteomobile-psychro.png" alt="MeteoMobile - diagramme psychrométrique" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -118,9 +126,9 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Information du projet</h3>
               <ul>
-                <li><strong>Catégorie</strong>: <span>Dévelopement Mobile</span></li>
-                <li><strong>Nom de l'application</strong>: EweLang</li>
-                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez Kingsoft Solutions)</span></li>
+                <li><strong>Catégorie</strong>: <span>Développement Mobile</span></li>
+                <li><strong>Nom de l'application</strong>: MeteoMobile</li>
+                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez METEO TOGO)</span></li>
                 <!-- <li><strong>URL du projet</strong>: <a href="#" target="_blank">www.github.com</a></li> -->
               </ul>
             </div>
@@ -130,33 +138,42 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Description</h2>
               <p>
-                EweLang est une application mobile qui permet d'apprendre la langue Ewé à partir du français de manière interactive et ludique. L'application propose une variété de leçons, d'exercices et de ressources pour aider les utilisateurs à maîtriser les bases de la langue Ewé, ainsi que des fonctionnalités avancées pour les apprenants plus expérimentés.
+                MeteoMobile est une application météo mobile complète, développée en Flutter. Elle fournit des données météorologiques en temps réel pour n’importe quelle ville du monde, avec une interface moderne au thème sombre. Elle ne demande aucune clé d’API : elle fonctionne immédiatement, sans configuration.
               </p>
               <p>
 
-                <h2>🎯 Objectifs</h2>
+                <h2>🎯 Fonctionnalités principales</h2>
                 <ul>
-              <li>Apprentissage de la langue Ewé à partir du français de manière interactive et ludique.</li>
-              <li>Proposer une variété de leçons et d'exercices.</li>
-              <li>Offrir une visualisation claire de la progression de l'apprentissage.</li>
+              <li>Dashboard : recherche de ville, villes récentes, alertes (indice UV, pluie), météo actuelle avec vent, humidité et température ressentie, phase de la Lune et graphique de la température sur 24 heures.</li>
+              <li>Favoris : enregistrement des lieux suivis.</li>
+              <li>Comparer : deux villes côte à côte (température, humidité, vent, probabilité de pluie, indice UV).</li>
+              <li>Journal : enregistrement du ressenti du jour (niveau de confort et notes), avec l’historique par ville.</li>
+              <li>Consensus : comparaison de plusieurs prévisions de température, avec moyenne, écart et variance.</li>
+              <li>Diagramme psychrométrique : calcul des propriétés de l’air humide (humidité relative et absolue, point de rosée, enthalpie, volume spécifique) à partir des températures sèche et mouillée.</li>
                 </ul>
               </p>
               </p>
 
                 <h2>🛠️ Technologies utilisées</h2>
                 <ul>
-             <li>Backend : Python, FastApi.</li>
-             <li>Base de données : SQLite pour stocker les transactions localement sur téléphone.</li>
-             <li>Frontend : Flutter, Dart.</li>
-             <li>Flutter Sound.</li>
-             <li>NLP(Natural Language Processing).</li>
+             <li>Interface mobile : Flutter 3.x et Dart 3.x.</li>
+             <li>Gestion d’état : Provider (architecture MVVM).</li>
+             <li>Requêtes vers les API : http.</li>
+             <li>Stockage local persistant : shared_preferences.</li>
+             <li>Graphiques interactifs : fl_chart.</li>
+             <li>Cartes interactives : flutter_map.</li>
+             <li>Géolocalisation GPS : geolocator, et gestion des autorisations Android avec permission_handler.</li>
+             <li>Formatage des dates en français : intl.</li>
+             <li>API Open-Meteo : prévisions (météo actuelle, 48 heures, 7 jours) et géocodage (recherche de villes et coordonnées GPS).</li>
+             <li>API REST Countries : drapeau, capitale, population et devise.</li>
+
                 </ul>
               </p>
 
 
     <main>
       <h1>Application Mobile</h1>
-      <p>Cette page présente les détails de l'application mobile EweLang.</p>
+      <p>Cette page présente les détails de l'application mobile MeteoMobile.</p>
     </main>
 
   </main>

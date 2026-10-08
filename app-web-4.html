@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>EweLang - Portfolio</title>
+  <title>ANAMET Back office - Portfolio</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -98,15 +98,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew2.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-admin-tableau-de-bord.png" alt="ANAMET Back office - tableau de bord" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ew4.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-admin-releves.png" alt="ANAMET Back office - relevés reçus et OCR" class="img-fluid" loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/EW3.PNG" alt="Portfolio Image" class="img-fluid" loading="lazy">
+                  <img src="assets/img/portfolio/anamet-admin-taches.png" alt="ANAMET Back office - historique des tâches planifiées" class="img-fluid" loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/anamet-admin-connexion.png" alt="ANAMET Back office - page de connexion" class="img-fluid" loading="lazy">
                 </div>
 
               </div>
@@ -118,10 +122,9 @@
             <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
               <h3>Information du projet</h3>
               <ul>
-                <li><strong>Catégorie</strong>: <span>Dévelopement Mobile</span></li>
-                <li><strong>Nom de l'application</strong>: EweLang</li>
-                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez Kingsoft Solutions)</span></li>
-                <!-- <li><strong>URL du projet</strong>: <a href="#" target="_blank">www.github.com</a></li> -->
+                <li><strong>Catégorie</strong>: <span>Développement Web</span></li>
+                <li><strong>Nom du projet</strong>: ANAMET - Back office</li>
+                <li><strong>Type de projet</strong>: <span>Expérience professionnelle (stage chez METEO TOGO)</span></li>
               </ul>
             </div>
           </div>
@@ -130,33 +133,38 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Description</h2>
               <p>
-                EweLang est une application mobile qui permet d'apprendre la langue Ewé à partir du français de manière interactive et ludique. L'application propose une variété de leçons, d'exercices et de ressources pour aider les utilisateurs à maîtriser les bases de la langue Ewé, ainsi que des fonctionnalités avancées pour les apprenants plus expérimentés.
+                Le back office ANAMET est l’application d’administration de l’Agence Nationale de la Météorologie du Togo (METEO TOGO) pour la diffusion automatisée des prévisions et des alertes météorologiques. C’est le seul endroit où les données sont saisies, validées et diffusées : l’application mobile ne fait que les lire.
               </p>
               <p>
 
                 <h2>🎯 Objectifs</h2>
                 <ul>
-              <li>Apprentissage de la langue Ewé à partir du français de manière interactive et ludique.</li>
-              <li>Proposer une variété de leçons et d'exercices.</li>
-              <li>Offrir une visualisation claire de la progression de l'apprentissage.</li>
+              <li>Gérer les prévisions, les bulletins et les alertes météorologiques, de la saisie à la validation.</li>
+              <li>Automatiser l’ingestion des relevés climatologiques reçus par email, avec reconnaissance du texte (OCR) des relevés scannés.</li>
+              <li>Produire les alertes en français, éwé et kabiyè, en texte et en audio (corpus vocal).</li>
+              <li>Notifier les utilisateurs de l’application mobile et suivre l’envoi des notifications.</li>
+              <li>Piloter l’activité depuis un tableau de bord : alertes actives, bulletins diffusés, relevés à traiter, agents actifs.</li>
                 </ul>
               </p>
               </p>
 
                 <h2>🛠️ Technologies utilisées</h2>
                 <ul>
-             <li>Backend : Python, FastApi.</li>
-             <li>Base de données : SQLite pour stocker les transactions localement sur téléphone.</li>
-             <li>Frontend : Flutter, Dart.</li>
-             <li>Flutter Sound.</li>
-             <li>NLP(Natural Language Processing).</li>
+             <li>Backend : Django 5 et Django REST Framework (API consommée par l’application mobile).</li>
+             <li>Interface d’administration : Django Unfold.</li>
+             <li>Base de données : PostgreSQL.</li>
+             <li>Tâches planifiées : APScheduler (ingestion périodique de la boîte email).</li>
+             <li>OCR des relevés scannés : API Gemini.</li>
+             <li>Corpus vocal : traduction NLLB-200, synthèse vocale MMS-TTS, assemblage audio avec pydub et ffmpeg.</li>
+             <li>Notifications push : Firebase Cloud Messaging.</li>
+
                 </ul>
               </p>
 
 
     <main>
-      <h1>Application Mobile</h1>
-      <p>Cette page présente les détails de l'application mobile EweLang.</p>
+      <h1>Application Web</h1>
+      <p>Cette page présente les détails du back office ANAMET.</p>
     </main>
 
   </main>
